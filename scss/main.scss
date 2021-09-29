@@ -1,13 +1,64 @@
+$fondo: #2c2f33;
+$nav: #23272a;
+$color3: #99aab5;
+$color4: #ffffff;
+$color5: #7289da;
+$color6: #0060df;
+$colordiscord: #7289da;
+
 @import 'bootstrap/bootstrap';
 
+body{
+    background-color: $fondo;
+}
+
+footer{
+
+    border-top: 1px solid $nav;
+    padding: 30px 0;
+
+    img{
+        position: relative;
+        width: 100px;
+    }
+
+    p{
+        margin-top: 15px;
+        position: relative;
+        color: $color4;
+        text-align: center;
+    }
+}
+
 .discord{
+    position: relative;
     padding: 0;
     width: 350px;
     margin: auto;
 }
 
-.boton{
-    
-    margin: auto;
+.btn-primary{
+    background-color: $color6;
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 5px $nav;
+        background-color: $color6;
+    }  
 }
 
+.si{
+    padding: 10px;
+}
+
+.imagen-nav{
+    padding: 10px;
+    position: relative;
+    width: 150px;
+}
+
+.img-foot{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
