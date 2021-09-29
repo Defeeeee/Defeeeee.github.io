@@ -12,36 +12,73 @@ body{
     background-color: $fondo;
 }
 
+a{
+
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+header{
+
+    .col-auto{
+        padding: 5px 0;
+    }
+
+    .main-menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        a{  
+            color: $color4;
+            padding: 3px 15px;
+        }
+
+        .quien{
+            position: relative;
+            margin: 0;
+            top: 25%;
+        }
+    }
+
+    margin-bottom: 10px;
+}
+
 footer{
 
     border-top: 1px solid $nav;
-    padding: 30px 0;
+    padding: 20px 0;
 
     img{
         position: relative;
         width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
     }
 
     p{
         margin-top: 15px;
-        position: relative;
-        color: $color4;
+        color: $color3;
         text-align: center;
     }
 }
 
 .discord{
     position: relative;
-    padding: 0;
     width: 350px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .btn-primary{
     background-color: $color6;
     &:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 8px 5px $nav;
         background-color: $color6;
     }  
 }
@@ -52,13 +89,21 @@ footer{
 
 .imagen-nav{
     padding: 10px;
-    position: relative;
     width: 150px;
 }
 
-.img-foot{
+.cuerpo{
+
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    p{
+        color: $color4;
+    }
+
+    h1{
+        color: $color4;
+    }
 }
